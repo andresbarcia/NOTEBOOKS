@@ -1,0 +1,98 @@
+ Income variables:
+ ------------------
+
+#INGRESOS TOTALES DEL HOGAR CON VALOR LOCATIVO (SIN SERVICIO DOMÉSTICO)
+ch['decil'] = pd.qcut(ch['ht11'], 10, labels=False)
+
+#TRABAJÓ LA SEMANA PASADA
+ch['decil'] = pd.qcut(ch['f269'], 10, labels = False , duplicates = "drop")
+
+#TRABAJOS QUE TIENE
+ch['decil'] = pd.qcut(ch['f70'], 10, labels = False , duplicates = "drop")
+
+# INVERSIÓN PARA REALIZAR LA ACTIVIDAD ECONÓMICA LOCAL O INSTALACIÓN DE UN PREDIO 
+ch['decil'] = pd.qcut(ch['f281_1'], 10, labels = False , duplicates = "drop")
+
+# INVERSIÓN PARA REALIZAR LA ACTIVIDAD ECONÓMICA CAPACITACIÓN O ESTUDIOS PREVIOS
+ch['decil'] = pd.qcut(ch['f281_3'], 10, labels = False , duplicates = "drop")
+
+# DURACIÓN DEL CONTRATO O ACUERDO LABORAL
+ch['decil'] = pd.qcut(ch['f283'], 10, labels = False , duplicates = "drop")
+
+# LUGAR DONDE REALIZA EL TRABAJO
+ch['decil'] = pd.qcut(ch['f78'], 10, labels = False , duplicates = "drop")
+
+# FRECUENCIA DE TRABAJO EN EL HOGAR EN LAS ÚLTIMAS 4 SEMANAS
+ch['decil'] = pd.qcut(ch['f289'], 10, labels = False , duplicates = "drop")
+
+# TRABAJO EN UN LUGAR DIFERENTE AL HOGAR O AL LUGAR HABITUAL DE TRABAJO
+ch['decil'] = pd.qcut(ch['f291_b'], 10, labels = False , duplicates = "drop")
+
+# TRABAJO DENTRO DEL DEPARTAMENTO 
+ch['decil'] = pd.qcut(ch['f80'], 10, labels = False , duplicates = "drop")
+
+# USO DE PC, TELÉFONO INTELIGENTE O TABLETA PARA TRABAJAR
+ch['decil'] = pd.qcut(ch['f290'], 10, labels = False , duplicates = "drop")
+--------------------------------------------------------------------------------------------------------------------
+Education variables:
+---------------------
+
+# FINALIZÓ EL NIVEL e197_1, PRIMARIA
+ch['decil'] = pd.qcut(ch['e197_1'], 10, labels = False , duplicates = "drop")
+
+# FINALIZÓ EL NIVEL e201_1a, EDUCACION MEDIA, CICLO BASICO
+ch['decil'] = pd.qcut(ch['e201_1a'], 10, labels = False , duplicates = "drop")
+
+# FINALIZÓ EL NIVEL e201_1c  , EDUCACION MEDIA, BACHILLERATO
+ch['decil'] = pd.qcut(ch['e201_1c'], 10, labels = False , duplicates = "drop")
+
+# FINALIZÓ EL NIVEL e218_1, EDUCACION TERCIARIA, UNIVERSITARIA
+ch['decil'] = pd.qcut(ch['e218_1'], 10, labels = False , duplicates = "drop")
+
+# FINALIZÓ EL NIVEL e221_1, EDUCACION TERCIARIA, NO UNIVERSITARIA
+ch['decil'] = pd.qcut(ch['e221_1'], 10, labels = False , duplicates = "drop")
+
+# FINALIZÓ EL NIVEL e224_1 (e224_1), EDUCACION TERCIARIA, POSTGRADO
+ch['decil'] = pd.qcut(ch['e224_1'], 10, labels = False , duplicates = "drop")
+--------------------------------------------------------------------------------------------------------------------
+Food, and other expenses variables:
+------------------------------------
+
+# GASTO MENSUAL EN ALIMENTOS 
+ch['decil'] = pd.qcut(ch['eg_ps3'], 10, labels = False , duplicates = "drop")
+
+# GASTO MENSUAL EN VIVIENDA
+ch['decil'] = pd.qcut(ch['eg_ps4'], 10, labels = False , duplicates = "drop")
+
+# GASTO MENSUAL EN VESTIMENTA
+ch['decil'] = pd.qcut(ch['eg_ps5'], 10, labels = False , duplicates = "drop")
+
+# GASTO MENSUAL EN TRANSPORTE
+ch['decil'] = pd.qcut(ch['eg_ps6'], 10, labels = False , duplicates = "drop")
+
+# GASTO MENSUAL EN SALUD
+ch['decil'] = pd.qcut(ch['eg_ps7'], 10, labels = False , duplicates = "drop")
+
+# GASTO MENSUAL EN EDUCACIÓN DE LOS HIJOS (eg_ps8)
+ch['decil'] = pd.qcut(ch['eg_ps8'], 10, labels = False , duplicates = "drop")
+
+# LÍNEA DE POBREZA DEL HOGAR, METODOLOGÍA 2006
+ch['decil'] = pd.qcut(ch['lp'], 10, labels = False , duplicates = "drop") 
+
+# EPÓSITOS BANCARIOS, para hacer una medicion del nivel de efectivo que manejan
+ch['decil'] = pd.qcut(ch['h167_1'], 10, labels = False , duplicates = "drop") 
+
+# PROPIETARIO DE OTRA VIVIENDA O LOCAL
+ch['decil'] = pd.qcut(ch['h159'], 10, labels = False , duplicates = "drop") 
+
+# CADA CUANTO COBRA ASIGNACIÓN FAMILIAR
+ch['decil'] = pd.qcut(ch['g152'], 10, labels = False , duplicates = "drop")
+
+# BECAS / SUBSIDIOS / DONACIONES DEL PAÍS (g148_5_1)
+ch['decil'] = pd.qcut(ch['g148_5_1'], 10, labels = False , duplicates = "drop")
+
+# FORMA DE PAGO: EFECTIVO O CHEQUE 
+ch['decil'] = pd.qcut(ch['g250_1'], 10, labels = False , duplicates = "drop")
+--------------------------------------------------------------------------------------------------------------------
+
+
