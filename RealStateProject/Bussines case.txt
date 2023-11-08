@@ -1,0 +1,7 @@
+
+
+1. Sale and Rental Prices of Houses in Uruguay.
+- Exploratory data analysis.
+- Projection of the real estate market for the first quarter of 2022 in the neighborhoods of municipalities B, C, CH and E, both in square meters and total value.
+- Recommendations on the most attractive sub-segments for investment.
+Database: A webscraping database with 100 records to be pre-cleaned is provided.
