@@ -1,0 +1,12 @@
+2024-10-23-Primer entrevista con TryoLabs y propuesta de desafio tecnico.
+
+En este apartado dejaremos un punteo con todas las notas y comentarios a tener en cuenta a la hora de enfrentar el desafio.
+
+Hoja de ruta:
+-Investigar el problema de negocio.
+-Investigar que dice la ciencia y otros desarrolladores al respecto, que herramientas y que modelos han implementado.
+-Investigar cual es la mejor estructura para presentar el notebook.
+-
+
+Tech aspects:
+Cuando usar One Hot encode?
