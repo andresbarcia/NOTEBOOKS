@@ -1,3 +1,0 @@
-Sources:
-House_Prices_kaggle_competition:
-https://github.com/RoAlSepNav/House_Prices_kaggle_competition
